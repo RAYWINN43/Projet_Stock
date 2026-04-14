@@ -1,0 +1,77 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+
+enum PermissionLevel {
+  USER
+  MANAGER
+  ADMIN
+}
+
+class "Mouvements" as EntreeSortie {
+  +Long id
+  +String commentaire
+  +LocalDate dateEvent
+  +Integer quantite
+}
+
+class Utilisateur {
+  +Long id
+  +String email
+  +String passwordHash
+  +PermissionLevel level
+}
+
+class Produit {
+  +Long id
+  +String nomProduit
+  +String famille
+  +String categorie
+}
+
+class Stock {
+  +Long id
+}
+
+class Equipe {
+  +Long id
+  +Integer numeroEquipe
+}
+
+class Mission {
+  +Long id
+  +String task
+}
+
+class Rayon {
+  +Long id
+  +String nom
+}
+
+EntreeSortie "*" --> "1" Produit : concerne
+
+Stock "1" o-- "*" Produit : contient
+Stock "1" --> "*" EntreeSortie : mouvements
+
+Mission "*" -- "*" Equipe : equipe
+Mission "*" --> "1" Utilisateur : chef
+
+Equipe "*" -- "*" Utilisateur : membres
+
+Rayon "1" --> "*" Produit : contient
+
+Utilisateur --> PermissionLevel : level
+
+Rayon "1"--> "*"Mission
+
+note right of Equipe
+Les membres doivent être
+des utilisateurs niveau USER
+end note
+
+note right of Mission
+Le chef doit être
+un utilisateur niveau MANAGER
+end note
+
+@enduml
