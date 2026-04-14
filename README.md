@@ -40,44 +40,44 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 | Rayon        | - Créer / modifier / supprimer un rayon <br> - Répartir les missions entre différents rayons |
 
 ## Les Classe 
-* Mouvement
+### Mouvement
 - Long id
 - String commentaire
 - LocalDate dateEvent
 - Integer quantite
 - Produit produit
 
-* Utilisateur
+### Utilisateur
 - Long id
 - String email
 - String passwordHash
 - PermissionLevel permissionLevel
 - Integer level (1 = user; 2 = manager; 3 = admin)
 
-* Produit
+### Produit
 - Long id
 - String nomProduit
 - String famille
 - String categorie
 
-* Stock
+### Stock
 - Long id
 - Produit[] produits
 - Mouvement[] entrees
 
-* Equipe
+### Equipe
 - Long id
 - Integer numeroEquipe
 - Utilisateur[] membres
 
-* Mission
+### Mission
 - Long id
 - Equipe[] equipes
 - Utilisateur chef
 - String task
 - Rayon rayon
 
-* Rayon
+### Rayon
 - Long id
 - String nom
 - Produit[] produits
