@@ -31,4 +31,4 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 ## 2. Architecture Technique
 
 ### Schéma d'infrastructure
-![Architecture du Projet](https://www.plantuml.com/plantuml/png/~hhttps://raw.githubusercontent.com/RAYWINN43/Projet_Stock/main/img/architecture.puml)
+![Architecture du Projet](//www.plantuml.com/plantuml/png/TPDDRjim48NtFCL0onO6scqMHGp4Q0tOGH0X1s2aiJqmVnnowA0jUg5UenShAKeXBK0RcIO_lZTlDBhtB1q7hOG_axb89pLqIdg_PdRq6XYtdJKj_KBuKY7-97lxJkO81way2e4cQ7X2fybxicQ7LrJmMm2yj9ld-BDVFww_3wlrmtxxAFu8CTX0ixVXYXeD-mQaXurXXzXQnuI3mEUTZJRKfsNBBdbsLgSBaXnce9FgGJ927n-RQpnAsrl3U4G7Rq4Q9iRY-SAao4Ssk2KBr99KzVyIxxrRr_-G_fIsvr5LUXQ79sVxGBoaRgmUYMhp83KfXNLE6HDOHrNfBTlkV2DRpZPlWIxpffK-cA3HsGoLI_kSOgbIblvSu6VvSncDeH9vymARJmsiLj-W-TfyzEGEEciwT0Q5o77IgLsj8ZsZeeJX0cMf2DKUaTGV8oJ4b2SxPpf5JXmEYuAKukgHIDOdF0YHxnMbEQLHlpgCdhajKu4BAKHzEN7p4RhBGrJ9ZMfZlK8OomYEZYS6UnXZYHtwgHBeBQNfXtz_sQ7euquefXvCF9KXVv9eUaXwSzN9R8T35vBaf1TCBJUfvI-x5hoFow3LVm00)
