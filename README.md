@@ -27,8 +27,56 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 * Créer / modifier / supprimer une mission
 * Créer / modifier / supprimer un rayon
 
+## Etape 1 : découpage modulaire 
 
-##Architecture Technique
+| Module        | Fonctionnalités incluses |
+|--------------|--------------------------|
+| Inventaire   | - Voir les stocks <br> - Rechercher des produits (stockés ou non) |
+| Suivi        | - Créer / modifier / supprimer un mouvement <br> - Voir historique des mouvements <br> - Rechercher des mouvements |
+| Utilisateurs | - Authentification utilisateur <br> - Créer / modifier / supprimer un compte |
+| Notifications| - Envoyer des notifications à certains seuils de stockage <br> - Planifier des notifications lorsqu'un produit devient disponible ou indisponible |
+| Équipe       | - Créer / modifier / supprimer une équipe <br> - Répartir les utilisateurs entre différentes équipes |
+| Mission      | - Créer / modifier / supprimer une mission <br> - Répartir les équipes entre différentes missions |
+| Rayon        | - Créer / modifier / supprimer un rayon <br> - Répartir les missions entre différents rayons |
 
-### Schéma d'infrastructure
+## Les Classe 
+Mouvement <br>
+* Long id ;
+* String commentaire ;
+* LocalDate dateEvent ;
+* Integer quantite ;
+* Produit produit ;
+Utilisateur <br>
+* Long id ;
+* String email ;
+* String passwordHash ;
+* PermissionLevel permissionLevel
+* PermissionLevel
+* Integer level (1 = user; 2 = manager; 3 = admin)
+Produit <br>
+* Long id
+* String nomProduit
+* String famille
+* String categorie
+Stock <br>
+* Long id
+* Produit[] produits
+* Mouvement[] entrees
+Equipe <br>
+* Long id
+* Integer numeroEquipe
+* Utilisateur[] membres
+Mission <br>
+* Long id
+* Equipe[] equipes
+* Utilisateur chef 
+* String task
+* Rayon rayon
+Rayon <br>
+* long id 
+* string nom 
+* Produit[] produits
+
+
+## Architecture Technique
 Architecture du Projet : ![](img/pantulm.png)
