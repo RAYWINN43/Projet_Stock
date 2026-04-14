@@ -31,4 +31,4 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 ## 2. Architecture Technique
 
 ### Schéma d'infrastructure
-![Architecture du Projet](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/RAYWINN43/Projet_Stock/img/architecture.puml)
+![Architecture du Projet](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/RAYWINN43/Projet_Stock/tree/main/img/architecture.puml)
