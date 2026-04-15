@@ -145,6 +145,9 @@ Architecture du Projet : ![](img/pantulm.png)
 
 Architecture N-Tier Projet : ![](img/NTIER.png)
 
+## MircoService
+Notre système étant basé sur une architecture 3-tiers, il n’intègre pas de couche Gateway, généralement présente dans les architectures 4-tiers. Donc ces éléments ne nous impactent pas.
+
 ## Acteurs :
 Entité commanditaire : IPSSI <br>
 Product owner : Mostapha Bachir ADDI <br>
