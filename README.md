@@ -116,28 +116,28 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 
 ## Fonctionaliter Patterns
 
-StockRepository      	← accès aux données / Repository
-SearchService	        ← recherche produit / CQRS (permet de  rechercher et affichage) 
+* StockRepository      	← accès aux données / Repository
+* SearchService	        ← recherche produit / CQRS (permet de  rechercher et affichage) 
 
-MovementRepository   	← gestion des mouvement / Repository
-HistoryService       	← historique des événements / Event-Driven (réagit à un événement (quantité > )
+* MovementRepository   	← gestion des mouvement / Repository
+* HistoryService       	← historique des événements / Event-Driven (réagit à un événement (quantité > )
 
-AuthService           	← authentification / Strategy (comportement dynamique)
-Access		        	← gestion des rôles / Strategy (comportement dynamique)
-Permission   			← contrôle d’accès / Decorator (ajouter des règles)
+* AuthService           	← authentification / Strategy (comportement dynamique)
+* Access		        	← gestion des rôles / Strategy (comportement dynamique)
+* Permission   			← contrôle d’accès / Decorator (ajouter des règles)
 
-StockAlert        		← événement / Observer (notifier automatiquement)
-NotificationListener   	← consommateur / Event-Driven (réagir aux événements)
-NotificationScheduler  	← planification / Scheduler (exécuter plus tard)
+* StockAlert        		← événement / Observer (notifier automatiquement)
+* NotificationListener   	← consommateur / Event-Driven (réagir aux événements)
+* NotificationScheduler  	← planification / Scheduler (exécuter plus tard)
 
-TeamRepository   		← gestion équipes / Repository
-TeamService    		    ← logique métier / agregate (un bloc cohérent piloté par équipe/Team)
+* TeamRepository   		← gestion équipes / Repository
+* TeamService    		    ← logique métier / agregate (un bloc cohérent piloté par équipe/Team)
 
-MissionService     		← logique métier / State Machine (gère les états)
-MissionState      		← gestion états / State Machine (gère les états)
-MissionSaga        		← multiple étape / SAGA (Créée, Assignée, En cours, Terminée)
+* MissionService     		← logique métier / State Machine (gère les états)
+* MissionState      		← gestion états / State Machine (gère les états)
+* MissionSaga        		← multiple étape / SAGA (Créée, Assignée, En cours, Terminée)
 
-ShelfRepository   		← gestion rayons / Repository
+* ShelfRepository   		← gestion rayons / Repository
 
 
 ## Architecture Technique
@@ -150,11 +150,11 @@ Entité commanditaire : IPSSI <br>
 Product owner : Mostapha Bachir ADDI <br>
 SCRUM master : Antoine BLAIN <br>
 Équipe de développement : <br>
-Evan MARTIN <br>
-Corentin PECONTAL <br>
+* Evan MARTIN <br>
+* Corentin PECONTAL <br>
 Équipe de test : <br>
-Evan MARTIN <br>
-Corentin PECONTAL <br>
+* Evan MARTIN <br>
+* Corentin PECONTAL <br>
 Designer UI/UX : Romain MOREAU <br>
 Magasins utilisateurs finaux <br>
 Parties prenantes : <br>
