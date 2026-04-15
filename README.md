@@ -92,18 +92,18 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 ### Créer / modifier / supprimer un compte
 - Interface d'entrée → Recevoir la requête
 - Logique métier → Valider la conformité des données renseignées
-- Persistance → Sauvegarder l'ajout ou la modification
+- Persistance → Sauvegarder l'ajout ou la modification <br>
  → Idem pour les mouvements, missions, équipes et rayons
 ### Voir historique des mouvements
 - Interface d'entrée → Recevoir la requête de recherche et les filtres apposés
 - Logique métier → Valider la conformité de la requête
 - Filtrage → Sélectionner les informations à partir de la requête
-- Affichage → Afficher l'historique des mouvements
+- Affichage → Afficher l'historique des mouvements <br>
 → Idem pour voir les stocks
 ### Répartir les utilisateurs entre différentes équipes
 - Interface d'entrée → Recevoir la requête d'attribution
 - Logique métier → Valider la conformité de la requête
-- Persistance → Sauvegarder la modification
+- Persistance → Sauvegarder la modification <br>
 → Idem pour répartir les équipes entre les missions et les missions entre les rayons
 ### Planifier les notifications
 - Interface d'entrée → Recevoir la requête de planification de notification
@@ -146,18 +146,18 @@ Architecture du Projet : ![](img/pantulm.png)
 Architecture N-Tier Projet : ![](img/NTIER.png)
 
 ## Acteurs :
-Entité commanditaire : IPSSI 
-Product owner : Mostapha Bachir ADDI
-SCRUM master : Antoine BLAIN
-Équipe de développement :
-Evan MARTIN
-Corentin PECONTAL
-Équipe de test :
-Evan MARTIN
-Corentin PECONTAL
-Designer UI/UX : Romain MOREAU
-Magasins utilisateurs finaux
-Parties prenantes :
+Entité commanditaire : IPSSI <br>
+Product owner : Mostapha Bachir ADDI <br>
+SCRUM master : Antoine BLAIN <br>
+Équipe de développement : <br>
+Evan MARTIN <br>
+Corentin PECONTAL <br>
+Équipe de test : <br>
+Evan MARTIN <br>
+Corentin PECONTAL <br>
+Designer UI/UX : Romain MOREAU <br>
+Magasins utilisateurs finaux <br>
+Parties prenantes : <br>
 Équipe de support client pour gérer les retours de bug des utilisateurs.
 ## Étape 6 — Outils et protocoles
 ### Outils de Développement
