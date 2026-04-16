@@ -37,7 +37,7 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 | Inventaire   | - Voir les stocks <br> - Rechercher des produits (stockés ou non) |
 | Suivi        | - Créer / modifier / supprimer un mouvement <br> - Voir historique des mouvements <br> - Rechercher des mouvements |
 | Utilisateurs | - Authentification utilisateur <br> - Créer / modifier / supprimer un compte |
-| Notifications| - Envoyer des notifications à certains seuils de stockage <br> - Planifier des notifications lorsqu'un produit devient disponible ou indisponible |
+| Notifications| - Envoyer des notifications à certains seuils de stockage <br> - Planifier des notifications lorsqu'un produit devient disponible ou indisponible - Envoyer des notifications relatives à des changements d'état |
 | Équipe       | - Créer / modifier / supprimer une équipe <br> - Répartir les utilisateurs entre différentes équipes |
 | Mission      | - Créer / modifier / supprimer une mission <br> - Répartir les équipes entre différentes missions |
 | Rayon        | - Créer / modifier / supprimer un rayon <br> - Répartir les missions entre différents rayons |
