@@ -21,6 +21,7 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 * Rechercher des mouvements
 * Rechercher des produits (stockés ou non)
 * Envoyer des notifications à certains seuils de stockage
+* Envoyer des notifications relatives à des changements d'état dans les missions, les équipes ou les utilisateurs
 * Planifier des notifications lorsqu'un certain produit devient disponible ou indisponible
 * Répartir les utilisateurs entre différentes équipes
 * Répartir les équipes entre différentes missions
@@ -113,6 +114,10 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 - Entrée → Recevoir l'évolution des niveaux de stockage
 - Surveillance → Comparer les niveaux aux seuils critiques renseignés
 - Notification → Envoyer une notification aux utilisateurs concernés si nécessaire
+### Envoyer des notifications relatives à des changements d'état
+- Entrée → Recevoir le changement d'état
+- Notification → Envoyer une notification aux utilisateurs concernés
+
 
 ## Patterns architecturaux
 
