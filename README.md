@@ -164,6 +164,8 @@ Architecture du Projet : ![](img/pantulm.png)
 
 Architecture N-Tier Projet : ![](img/NTIER.png)
 
+Zoom sur l'instance : ![](img/Instance.png)
+
 ## Instance
 ![](img/instance.png)
 
