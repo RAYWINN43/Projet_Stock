@@ -26,9 +26,11 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 * Répartir les utilisateurs entre différentes équipes
 * Répartir les équipes entre différentes missions
 * Répartir les missions entre différents rayons
+* Répartir les rayons entre différents magasins
 * Créer / modifier / supprimer une équipe 
 * Créer / modifier / supprimer une mission
 * Créer / modifier / supprimer un rayon
+* Créer / modifier / supprimer un magasin
 
 ## Découpage modulaire 
 
@@ -41,6 +43,7 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 | Équipe       | - Créer / modifier / supprimer une équipe <br> - Répartir les utilisateurs entre différentes équipes |
 | Mission      | - Créer / modifier / supprimer une mission <br> - Répartir les équipes entre différentes missions |
 | Rayon        | - Créer / modifier / supprimer un rayon <br> - Répartir les missions entre différents rayons |
+| Magasin      | - Créer / modifier / supprimer un magasin <br> - Répartir les rayons entre différents magasins |
 
 ## Les Classes 
 ### Mouvement
@@ -55,7 +58,6 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 - String email
 - String passwordHash
 - PermissionLevel permissionLevel
-- Integer level (1 = user; 2 = manager; 3 = admin)
 
 ### Produit
 - Long id
@@ -85,6 +87,16 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 - String nom
 - Produit[] produits
 
+### Magasin
+- Long id
+- String nomMagasin
+- String adresse
+- Integer CP
+- String telephone
+
+### PermissionLevel
+- Integer level (1 = user; 2 = manager; 3 = admin)
+
 ## Composants techniques 
 ### Authentification
 - Interface d'entrée → Recevoir les informations de l'utilisateur
@@ -94,7 +106,7 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 - Interface d'entrée → Recevoir la requête
 - Logique métier → Valider la conformité des données renseignées
 - Persistance → Sauvegarder l'ajout ou la modification <br>
- → Idem pour les mouvements, missions, équipes et rayons
+ → Idem pour les mouvements, missions, équipes, rayons et magasins
 ### Voir historique des mouvements
 - Interface d'entrée → Recevoir la requête de recherche et les filtres apposés
 - Logique métier → Valider la conformité de la requête
@@ -105,7 +117,7 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 - Interface d'entrée → Recevoir la requête d'attribution
 - Logique métier → Valider la conformité de la requête
 - Persistance → Sauvegarder la modification <br>
-→ Idem pour répartir les équipes entre les missions et les missions entre les rayons
+→ Idem pour répartir les équipes entre les missions, les missions entre les rayons et les rayons entre les magasins
 ### Planifier les notifications
 - Interface d'entrée → Recevoir la requête de planification de notification
 - Logique métier → Valider la conformité de la notification
@@ -143,6 +155,8 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 * MissionSaga        		← multiple étape / SAGA (Créée, Assignée, En cours, Terminée)
 
 * ShelfRepository   		← gestion rayons / Repository
+
+* ShopRepository      	← gestion magasins / Repository
 
 
 ## Architecture Technique
