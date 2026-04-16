@@ -150,8 +150,11 @@ Architecture du Projet : ![](img/pantulm.png)
 
 Architecture N-Tier Projet : ![](img/NTIER.png)
 
+## Instance
+![](img/instance.png)
+
 ## MicroService
-Notre système étant basé sur une architecture 3-tiers, il n’intègre pas de couche Gateway, généralement présente dans les architectures 4-tiers. Donc ces éléments ne nous impactent pas.
+![](img/micro.png)
 
 ## Acteurs :
 Entité commanditaire : IPSSI <br>
