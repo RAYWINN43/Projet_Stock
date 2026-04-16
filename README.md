@@ -29,7 +29,7 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 * Créer / modifier / supprimer une mission
 * Créer / modifier / supprimer un rayon
 
-## Etape 1 : découpage modulaire 
+## Découpage modulaire 
 
 | Module        | Fonctionnalités incluses |
 |--------------|--------------------------|
@@ -41,7 +41,7 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 | Mission      | - Créer / modifier / supprimer une mission <br> - Répartir les équipes entre différentes missions |
 | Rayon        | - Créer / modifier / supprimer un rayon <br> - Répartir les missions entre différents rayons |
 
-## Les Classe 
+## Les Classes 
 ### Mouvement
 - Long id
 - String commentaire
@@ -84,7 +84,7 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 - String nom
 - Produit[] produits
 
-## Composant Technique 
+## Composants techniques 
 ### Authentification
 - Interface d'entrée → Recevoir les informations de l'utilisateur
 - Authentification → Vérifier la conformité des informations renseignées
@@ -114,7 +114,7 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 - Surveillance → Comparer les niveaux aux seuils critiques renseignés
 - Notification → Envoyer une notification aux utilisateurs concernés si nécessaire
 
-## Fonctionaliter Patterns
+## Patterns architecturaux
 
 * StockRepository      	← accès aux données / Repository
 * SearchService	        ← recherche produit / CQRS (permet de  rechercher et affichage) 
@@ -145,7 +145,7 @@ Architecture du Projet : ![](img/pantulm.png)
 
 Architecture N-Tier Projet : ![](img/NTIER.png)
 
-## MircoService
+## MicroService
 Notre système étant basé sur une architecture 3-tiers, il n’intègre pas de couche Gateway, généralement présente dans les architectures 4-tiers. Donc ces éléments ne nous impactent pas.
 
 ## Acteurs :
@@ -162,14 +162,14 @@ Designer UI/UX : Romain MOREAU <br>
 Magasins utilisateurs finaux <br>
 Parties prenantes : <br>
 Équipe de support client pour gérer les retours de bug des utilisateurs.
-## Étape 6 — Outils et protocoles
-### Outils de Développement
+## Outils et protocoles
+### Outils de développement
 Visual Studio Code / PHPStorm pour le développement.
 Figma pour le prototypage de l'interface utilisateur.
 Stitch pour un aperçu d’idée de maquette.
-### Gestion de Versions
+### Gestion de versions
 Utilisation de Git pour la gestion de versions du code source.
-### Sécurité des Données
+### Sécurité des données
 Mise en place de protocoles de sécurité standard pour protéger les données des utilisateurs : 
     - Certificat SSL
     - Token
