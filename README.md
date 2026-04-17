@@ -168,9 +168,6 @@ Architecture N-Tier Projet : ![](img/NTIER.png)
 
 Zoom sur l'instance : ![](img/Instance.drawio.png)
 
-## MicroService
-![](img/micro.png)
-
 ## Acteurs :
 Entité commanditaire : IPSSI <br>
 Product owner : Mostapha Bachir ADDI <br>
