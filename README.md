@@ -162,7 +162,7 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 ## Architecture Technique
 Architecture du Projet : ![](img/pantulm.png)
 
-![](img/mcd.png)
+![](img/MCD.png)
 
 Architecture N-Tier Projet : ![](img/NTIER.png)
 
