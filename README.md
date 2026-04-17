@@ -166,9 +166,6 @@ Architecture N-Tier Projet : ![](img/NTIER.png)
 
 Zoom sur l'instance : ![](img/Instance.drawio.png)
 
-## Instance
-![](img/instance.png)
-
 ## MicroService
 ![](img/micro.png)
 
