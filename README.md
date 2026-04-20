@@ -156,7 +156,7 @@ Dans ce projet, nous allons créer un site site de gestion de stock, permettant 
 
 * ShelfRepository   		← gestion rayons / Repository
 * MissionRepository      	← accès aux données / Repository
-* notificationRepository      	← accès aux données / Repository
+* NotificationRepository      	← accès aux données / Repository
 
 * ShopRepository      	← gestion magasins / Repository
 
